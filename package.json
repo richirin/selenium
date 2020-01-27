@@ -1,0 +1,49 @@
+{
+  "name": "selenium-node-js",
+  "version": "1.0.0",
+  "description": "Automation Selenium Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --timeout 30000 --reporter mochawesome --reporter-options  ./test/*",
+    "parallel": "mocha-parallel-tests --recursive --reporter mochawesome --reporter-options  --timeout 30000 --slow 1000 test/02_Store test/01_Home/*",
+    "lint": "eslint .",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "npm run lint:js -- --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/eslint — fix",
+      "git add"
+    ]
+  },
+  "author": "QA",
+  "license": "MIT",
+  "dependencies": {
+    "chromedriver": "^79.0.0",
+    "selenium-webdriver": "^3.6.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chromedriver": "^79.0.0",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "faker": "^4.1.0",
+    "husky": "^4.2.0",
+    "lint-staged": "^10.0.1",
+    "mocha": "^5.2.0",
+    "mocha-parallel-tests": "^2.2.2",
+    "mochawesome": "^4.1.0",
+    "selenium-webdriver": "^3.6.0"
+  }
+}

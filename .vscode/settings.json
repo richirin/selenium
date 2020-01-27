@@ -1,0 +1,34 @@
+{
+    
+        "workbench.sideBar.location": "left",
+        "workbench.statusBar.visible": true,
+        "php.validate.run": "onType",
+        "workbench.editor.showTabs": true,
+        "editor.fontSize":12,
+        "explorer.openEditors.visible": 10,
+        "editor.renderIndentGuides": true,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "typescript.check.npmIsInstalled": false,
+        "workbench.activityBar.visible": true,
+        "eslint.enable": true,
+        "eslint.trace.server": "messages",
+        "workbench.startupEditor": "newUntitledFile",
+        "gitlens.advanced.messages": {
+            "suppressCommitHasNoPreviousCommitWarning": false,
+            "suppressCommitNotFoundWarning": false,
+            "suppressFileNotUnderSourceControlWarning": false,
+            "suppressGitVersionWarning": false,
+            "suppressLineUncommittedWarning": false,
+            "suppressNoRepositoryWarning": false,
+            "suppressResultsExplorerNotice": false,
+            "suppressShowKeyBindingsNotice": true,
+            "suppressUpdateNotice": false,
+            "suppressWelcomeNotice": true
+        },
+        "gitlens.keymap": "none",
+        "explorer.confirmDelete": false,
+        "gitlens.historyExplorer.enabled": true
+    
+}
